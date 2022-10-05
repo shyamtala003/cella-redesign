@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font roboto and poppins ad lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- flowbite cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'lato': ['Lato', 'sans-serif']
+                },
+
+                extend: {
+                    colors: {
+                        pureWhite: '#ffffff',
+                        pureBlack: '#181818',
+                        light: '#fafafa',
+                        green: '#2daf5d',
+                        darkGreen: '#2e6541',
+                        lightGrenn: '#55f08c',
+                        grey: '#55f08c',
+                        darkgrey: '#5d5d5d'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div
+        class="top-container min-h-[100vh] bg-[#fafafa] z-10 md:px-[8%] relative before:content-[''] before:block before:absolute before:-z-10 before:top-[-20%] before:left-[-4%] before:-translate-y-50 before:-translate-x-50 before:bg-[#fef5e5] before:w-[300px] before:h-[300px] md:before:w-[500px] md:before:h-[500px] before:rounded-[50%] before:blur-xl ">
+
+        <!-- navbar -->
+
+        <nav class="border-gray-200 py-3.5 md:py-5 min-w-[100]">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <span class="self-center text-2xl font-bold whitespace-nowrap">CELLA</span>
+                </a>
+                <div class="flex md:hidden md:order-2">
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="flex md:items-center flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-14 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-pureBlack font-medium text-lg    rounded md:bg-transparent hover:text-green  md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-pureBlack font-medium text-lg    rounded md:bg-transparent hover:text-green  md:p-0"
+                                aria-current="page">Product</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-pureBlack font-medium text-lg    rounded md:bg-transparent hover:text-green  md:p-0"
+                                aria-current="page">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-pureBlack font-medium text-lg    rounded md:bg-transparent hover:text-green  md:p-0"
+                                aria-current="page">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block mt-4 md:mt-0 text-pureBlack border-2 border-[#989898] focus:ring-blue-300 font-medium rounded-[30px] text-lg  py-3 px-5 text-center md:mr-0">Get
+                                started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- hero section -->
+
+        <section class="flex flex-wrap md:flex-nowrap justify-center md:justify-between  gap-12  lg:item-center mt-4">
+            <div>
+                <img src="data:image/webp;base64,UklGRtgEAABXRUJQVlA4WAoAAAAQAAAAPAAAPAAAQUxQSIwBAAABkCIAkBo4c6RYsaJiVD1GlSGqqFgxRRU9RpWiDhXTqlJUKapMCqOOVh1NYXHmAxExAeA16P/4KAS2/YiYsYkREeUmLs//w5TLpKJYy+MEqvt4jGjesNguNbKVQz/qr3P4aPCcwfY5AzxB7y6aCnLBd6OCXCean6CWW4wQq5AWMqJ1HW37aWVWH0mdReu5kFJmh52ELqHLG1Q29c05wXQ7gTD9iO6LkcDP8f4C/U72n3B24lGBFCdF7CC4/hzp5teXG63pezOJtOfydLlqT+d35Pi9MwJYLpCtfB4myPmRYPUmmePUB/2MRpYDxNkki+/iBKjPijlicyMn6sA0GvlOqBAR2EfpNxLfkhAcL+98Iz3N5Wk9+KyMn3vILrWC/7OP5tzkh4DoQRdzl4Bu7qAfCJ9wEFGC51YfgXRs1UmrZdJCBrQgtxgB4p0WJ6jVfzOaBPJ3jTJ6oVFMD74bZMBwxOASh2hOI5dzgBHNG2B5QpPyqJhUFAEPyBSdwDRWbOcCfYgogG1lIpLlfgBWUDggJgMAAPAUAJ0BKj0APQA+IQyEQiGG/AYAgS2AGSGgB1CU9+X/hz+QHTlbQ9nf21/xeXZ+Ffn/+0+3TtAeYB+lP+o6iPmA/XL9pOwt6AH9L/w/WjegB5Z3sg/uN6S+YgdnX2q/sA4IPF9EDhw/u3gDGAMw75X/pPYK6PTR7eWCQir5FySCgjHCkwz1mvgMo+zSxUN2aoPauFOEC/+mQn1ooNpdOAG/72U52o6mAljdwWZL8CiYAP7/o967wFbTEujh9bpGeZ00rbsC3I0Pt4CrpvbIj5lh4ERHr/5etVrVwxMZQjnnJakd6Y5MliF25Qs9/otnHnmpn6QJS+rWr5fSqcViywjdfntSVKY253vYY0G62opWjLBR7E+w1pBC0Mq+bNi/DdyuRz/jP8Ej9PjSzU8C42zG88dcs5LoEhRzkgJQ9SUQAcwy576uNGE1QoISl/7vB0WixH4D88W6cMhAW1p+LWvNZKnZB7Q5AR7cnw7/TVXHZYsj1LDdhnW7w+KJFLNE/ycV1L+ke75HzmK+yLS6UN5J/gDAjf5yDp9VAisy0FV9/II4u9/1tD2cjd0is4TBfB2ynwXsq23xDMJhCymmE82lL2UTsUt3o9h64GX/pL413NQp3nz+TlgBlJpMG0gWbcjCK5mWuHZJs1TGVAsa9Ji3/WBj135pjHessFSiIrQPN3EsOy0KgjgMwBfz7mA6nioxknHrdakGTFaoDHO6tLHlFQGtDwKFrTE3fhLosiBIPAatt/Dw+ypD7UdOjz85XrJn3N2/vsWNrLB12hDiVC0+aPWrN7vkjXHNSzJTtC5Y/Z9kHx4xR0ooQBU+sQrvAspe1WrhD03AuV5Na2DzPzC58QRWZbDUNz/JwIuxXTNFHZvnCmTxC9OqrUOb0e2lxPkdozS5RhVLSy/t4sxDYAIZSaYC4hYvI5fsKuNbXS5Vcw6UhKo4udHQBw7A61ek5WbTgKDhMXzBG3MVxhL9DEUg7N4dTpYuSQPpIFy5nUhVEdDcbD0rdividx/6y68wLyg7Wf5edwhA2BxeOWuced5oDukEKxiKhxjYO70j9DINCeLuhgAA" class="block ml-[80%] lg:ml-[120%] md:mt-8 w-10 md:w-auto" alt="">
+                <h1 class="text-5xl sm:text-center md:text-start sm:leading-[4rem] md:text-[5rem] md:leading-[5rem]  font-bold font-poppins font-[#212121]">We Are Cella <br> Agriculture
+                </h1>
+
+                <h3 class="font-lato text-2xl font-[#3c3c3c] font-bold mt-8">we belives Future of Food is here</h3>
+            
+                <div class="bg-[#fafafa] mt-14 rounded-[40px]  shadow-xl shadow-slate-800/10 flex flex-none justify-between items-center">
+                    <input type="text" name="search" placeholder="What are you looking for?" class="border-none px-3 py-3 sm:px-10 sm:py-5 rounded-[40px] text-[#6b6b6b] font-medium bg-[#fafafa] placeholder:text-[#6b6b6b] placeholder:font-medium focus:ring-0">
+                    <button class="bg-green text-white px-12 py-5 rounded-[40px]">Search</button>
+                </div>
+
+            </div>
+            <img src="/assets/green_leaves.fd66e9ec.webp" class="w-[50%] md:w-[45%] drop-shadow-2xl " alt="">
+        </section>
+
+    </div>
+
+    <!-- flowbite script cdn -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>

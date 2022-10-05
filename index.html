@@ -42,9 +42,9 @@
     </script>
 </head>
 
-<body>
+<body class="bg-[#fafafa]">
     <div
-        class="top-container min-h-[100vh] bg-[#fafafa] z-10 px-[5%] md:px-[8%] relative before:content-[''] before:block before:absolute before:-z-10 before:top-[-20%] before:left-[-4%] before:-translate-y-50 before:-translate-x-50 before:bg-[#fef5e5] before:w-[300px] before:h-[300px] md:before:w-[500px] md:before:h-[500px] before:rounded-[50%] before:blur-xl overflow-x-hidden">
+        class="top-container bg-[#fafafa] z-10 px-[5%] md:px-[8%] relative before:content-[''] before:block before:absolute before:-z-10 before:top-[-20%] before:left-[-4%] before:-translate-y-50 before:-translate-x-50 before:bg-[#fef5e5] before:w-[300px] before:h-[300px] md:before:w-[500px] md:before:h-[500px] before:rounded-[50%] before:blur-xl overflow-x-hidden">
 
         <!-- navbar -->
 
@@ -103,23 +103,86 @@
         <!-- hero section -->
 
         <section class="flex flex-wrap md:flex-nowrap justify-center md:justify-between  gap-12  lg:item-center mt-4">
-            <div>
+            <div class="z-10">
                 <img src="./images/sstart.webp" class="block ml-[80%] lg:ml-[120%] md:mt-8 w-8 md:w-auto" alt="">
-                <h1 class="text-4xl text-center md:text-start sm:leading-[4rem] md:text-[5rem] md:leading-[5rem]  font-bold font-poppins font-[#212121]">We Are Cella <br> Agriculture
+                <h1
+                    class="text-4xl text-center md:text-start sm:leading-[4rem] md:text-[5rem] md:leading-[5rem]  font-bold font-poppins font-[#212121]">
+                    We Are Cella <br> Agriculture
                 </h1>
 
-                <h3 class="font-lato text-center md:text-2xl font-[#3c3c3c] font-bold mt-8">we belives Future of Food is here</h3>
-            
-                <div class="w-full bg-[#fafafa] mt-14 rounded-[40px]  shadow-xl shadow-slate-800/10 flex flex-none justify-between items-center">
-                    <input type="text" name="search" placeholder="What are you looking for?" class="border-none w-[100%] px-3 py-3 md:px-12 md:py-5 rounded-[50px] text-[#6b6b6b] font-medium bg-[#fafafa] placeholder:text-[#6b6b6b] placeholder:font-medium focus:ring-0">
-                    <button class="inline bg-green text-white px-5 py-3  md:px-12 md:py-5 rounded-[50px]">Search</button>
+                <h3 class="font-lato text-center md:text-2xl font-[#3c3c3c] font-bold mt-8">we belives Future of Food is
+                    here</h3>
+
+                <div
+                    class="w-full bg-[#fafafa] mt-14 rounded-[40px]  shadow-xl shadow-slate-800/10 flex flex-none justify-between items-center">
+                    <input type="text" name="search" placeholder="What are you looking for?"
+                        class="border-none w-[100%] px-4 py-4 md:px-12 md:py-5 rounded-[50px] text-[#6b6b6b] font-medium bg-[#fafafa] placeholder:text-[#6b6b6b] placeholder:font-medium focus:ring-0">
+                    <button class="bg-green text-white px-6 py-4  md:px-12 md:py-5 rounded-[50px]">Search</button>
+                </div>
+
+
+                <div class=" mt-12 md:mt-[7rem] bg-transparent">
+                    <div class="flex items-center justify-center flex-wrap gap-3 bg-transparent">
+                        <div
+                            class="w-16 h-16 md:w-20 md:h-20 bg-cover bg-center bg-[url('./images/profile_1.webp')] rounded-full border-4 border-white z-10">
+                        </div>
+                        <div
+                            class="-ml-10 w-16 h-16 md:w-20 md:h-20 bg-cover bg-center bg-[url('./images/profile_2.webp')] rounded-full border-4 border-white z-10">
+                        </div>
+                        <div
+                            class="-ml-10 w-16 h-16 md:w-20 md:h-20 bg-cover bg-center bg-[url('./images/profile_3.webp')] rounded-full border-4 border-white z-10">
+                        </div>
+
+                        <div class="ml-9 w-16 h-16 bg-cover bg-center bg-[url('./images/start.webp')]  z-10">
+                        </div>
+
+                        <div class="ml-5">
+                            <span class="text-md font-lato text-[#727272]">Join our community</span><br>
+                            <span class="text-md font-lato font-bold text-[#696a6a]">We're waiting for you</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-            <img src="./images/green_leaves.webp" class="object-cover h-auto drop-shadow-2xl " alt="">
-        </section>
 
+            <img src="./images/green_leaves.webp" class="md:w-[50%] h-auto z-20" alt="">
+        
+        </section>    
     </div>
+
+    <!-- trust by customers section -->
+    <section class="mt-28">
+        <h1 class="font-lato text-4xl text-center tracking-wider font-extrabold">Trust by overs 20,000 Partners</h1>
+
+
+        <div class="mt-12 flex items-center justify-center gap-x-16 gap-y-4 flex-wrap">
+            <img class="w-28" src="./logos/Airbnb_Logo_Bélo.svg" alt="">
+            <img class="w-28" src="./logos/cdnlogo.com_treehouse.svg" alt="">
+            <img class="w-28" src="./logos/framer-ar21.svg" alt="">
+            <img class="w-28" src="./logos/Opendoorlogo.svg" alt="">
+            <img class="w-28" src="./logos/The_Himalaya_Drug_Company_logo.svg" alt="">
+            <img class="w-28" src="./logos/patnjali.svg" alt="">
+        </div>
+    </section>
+
+    <!-- story ssection -->
+    <section class="flex flex-wrap justify-center md:justify-around lg:justify-center gap-24 px-[8%] mt-24 py-8 bg-white">
+        <div class="relative max-w-[450px]">
+            <img src="./images/farm.webp" class="w-[90%] min-h-[500px] sm:min-h-[700px] md:h-[50%] md:min-h-auto rounded-tl-[100rem] rounded-tr-[25rem] rounded-b-[100rem] shadow-2xl"  alt="">
+            <span class="absolute top-[45%] whitespace-nowrap left-[100%] -translate-x-[100%] text-xl md:text-3xl font-semibold text-white font-serif bg-[rgba(255,255,255,.4)] px-8 py-7 rounded-3xl shadow-2xl backdrop-blur-md">Since 1986</span>
+        </div>
+
+        <div class="relative max-w-[400px]"> 
+            <img src="./images/sstart.webp" class="ml-[80%]" alt="">
+            <h1 class="font-lato text-4xl md:text-5xl tracking-wider font-extrabold text-center md:text-left">Our story</h1>
+            <p class="text-md font-medium max-w-[500px] text-justify  md:text-left mt-12 text-[#8a8a8a] indent-8">
+                A major portion of our diet is dedicated to staple foods that come from wheat, rice, corn, pulses, potato, oats, cassava, sorghum, millets etc. The scale and outreach of agricultural crops is key to feeding 9.6 billion people sustainably by 2050. However, the lack of protein quality and quantity in agricultural products must be addressed first.       
+            </p>
+            <p class="mt-8 text-md font-medium max-w-[500px] text-justify  md:text-left text-[#8a8a8a] indent-8"> Cella Farms, we harness the power of fermentation to enrich agricultural products with complete protein and make them nutritionally balanced. Our mission is to deliver the best tasting nutritious products for all eating occassions, that are right for our entire family and for planet earth.</p>
+
+            <button class="mt-12 bg-green text-white px-6 py-4  md:px-12 md:py-5 rounded-[50px]">Learn More</button>
+        </div>
+    </section>
 
     <!-- flowbite script cdn -->
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
