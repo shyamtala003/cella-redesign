@@ -35,7 +35,11 @@
                         lightGrenn: '#55f08c',
                         grey: '#55f08c',
                         darkgrey: '#5d5d5d'
-                    }
+                    },
+                    backgroundImage: (theme) => ({
+
+                        footer_bg: "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)) url('./images/footer__bg.webp')",
+                    }),
                 }
             }
         }
@@ -204,7 +208,8 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4    gap-6 place-content-center mt-12">
 
-            <div class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
+            <div
+                class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
                 <img class="w-[100px] h-[100px] rounded-[40px]" src="./images/wheat.webp" alt="">
                 <h1 class="text-xl font-bold">Wheat</h1>
                 <p class="max-w-[220px] text-center text-md text-[#929292] font-medium">
@@ -212,7 +217,8 @@
                     in fiber and carbohydrates
                 </p>
             </div>
-            <div class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
+            <div
+                class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
                 <img class="w-[100px] h-[100px] rounded-[40px]" src="./images/rise.webp" alt="">
                 <h1 class="text-xl font-bold">Rice</h1>
                 <p class="max-w-[220px] text-center text-md text-[#999999] font-medium">
@@ -220,7 +226,8 @@
                     in fiber and carbohydrates
                 </p>
             </div>
-            <div class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
+            <div
+                class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
                 <img class="w-[100px] h-[100px] rounded-[40px]" src="./images/pumpkin.webp" alt="">
                 <h1 class="text-xl font-bold">Pumpkin</h1>
                 <p class="max-w-[220px] text-center text-md text-[#999999] font-medium">
@@ -228,7 +235,8 @@
                     in fiber and carbohydrates
                 </p>
             </div>
-            <div class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
+            <div
+                class="flex flex-col gap-6 items-center lg:max-w-[300px] px-5 py-10 bg-white rounded-[50px] xl shadow-xl">
                 <img class="w-[100px] h-[100px] rounded-[40px]" src="./images/veg.webp" alt="">
                 <h1 class="text-xl font-bold">Vagetable</h1>
                 <p class="max-w-[220px] text-center text-md text-[#999999] font-medium">
@@ -244,10 +252,13 @@
     <!-- trust our product -->
     <section class="px-[8%] py-20 md:py-[5rem] bg-white flex flex-wrap items-center justify-center gap-24">
         <div>
-            <h1 class="text-2xl md:text-5xl font-bold max-w-[550px] leading-tight">Thousand of people trust our agricultural products</h1>
-            <p class="mt-12 text-[#8e8e8e] font-normal text-2xl max-w-[500px]">Join the amazing Farmer that we provide for you and just you</p>
+            <h1 class="text-2xl md:text-5xl font-bold max-w-[550px] leading-tight">Thousand of people trust our
+                agricultural products</h1>
+            <p class="mt-12 text-[#8e8e8e] font-normal text-2xl max-w-[500px]">Join the amazing Farmer that we provide
+                for you and just you</p>
 
-            <div class="mt-12 py-3 pl-8 bg-darkGreen text-[#f8fffd] flex flex-wrap flex-col gap-7  justify-around items-start md:flex-row rounded-3xl shadow-2xl">
+            <div
+                class="mt-12 py-3 pl-8 bg-darkGreen text-[#f8fffd] flex flex-wrap flex-col gap-7  justify-around items-start md:flex-row rounded-3xl shadow-2xl">
                 <div>
                     <h1 class="text-2xl font-bold">20,000 + </h1>
                     <p class="text-[#b5d0bf]">People join with us</p>
@@ -256,7 +267,8 @@
                     <h1 class="text-2xl font-bold">20 +</h1>
                     <p class="text-[#b5d0bf]">Countries cooperated with us</p>
                 </div>
-                <button class="bg-[#55f08c] text-black text-xl px-14 py-3 md:text-3xl md:flex items-center justify-center md:px-6 md:py-6 rounded-3xl">
+                <button
+                    class="bg-[#55f08c] text-black text-xl px-14 py-3 md:text-3xl md:flex items-center justify-center md:px-6 md:py-6 rounded-3xl">
                     <ion-icon name="arrow-forward"></ion-icon>
                 </button>
             </div>
@@ -265,12 +277,38 @@
 
         <div class="relative">
             <img src="./images/0_road_in_farm.jpg"
-                class="max-w-[100%] h-[600px] rounded-tl-[5rem] rounded-tr-[15rem] rounded-b-[5rem]" alt="">
-                <span
-                class="absolute top-[45%] whitespace-nowrap left-0 -translate-x-[20%] text-xl md:text-3xl font-semibold text-white font-serif bg-[rgba(255,255,255,.4)] px-8 py-7 rounded-3xl shadow-2xl backdrop-blur-md">Join Now</span>
+                class="max-w-[100%] h-[450px] md:h-[600px] rounded-t-[3rem] rounded-tr-[7rem] rounded-b-[3rem] md:rounded-tl-[5rem] md:rounded-tr-[13rem] md:rounded-b-[5rem]"
+                alt="">
+            <span
+                class="absolute top-[45%] whitespace-nowrap left-0 -translate-x-[20%] text-xl md:text-3xl font-semibold text-white font-serif bg-[rgba(255,255,255,.4)] px-8 py-7 rounded-3xl shadow-2xl backdrop-blur-md">Join
+                Now</span>
         </div>
 
     </section>
+
+    <footer class="px-[8%] py-10 min-h-[65vh] w-full flex flex-wrap gap-8 items-center justify-between bg-cover bg-center" style="   background:linear-gradient(0deg, rgba(0, 0, 0, 0.528), rgba(0, 0, 0, 0.146)), url('./images/footer__bg.webp');
+    background-size:cover;">
+
+        <div>
+            <h1 class="text-white text-5xl font-medium">Get information about us</h1>
+            <P class="mt-8 text-white text-2xl font-normal">Whar are you looking of? let's join us!</P>
+
+
+            <div
+                class="w-full bg-[#fafafa] mt-14 rounded-[40px]  shadow-xl shadow-slate-800/10 flex flex-none justify-between items-center">
+                <input type="email" name="search" placeholder="Email"
+                    class="border-none w-[100%] px-4 py-4 md:px-12 md:py-5 rounded-[50px] text-[#6b6b6b] font-medium bg-[#fafafa] placeholder:text-[#6b6b6b] placeholder:font-medium focus:ring-0">
+                <button class="bg-green text-white px-6 py-4  md:px-12 md:py-5 rounded-[50px]">Search</button>
+            </div>
+        </div>
+
+        <div class="flex w-full sm:w-auto items-center justify-center gap-8">
+            <a href="#" class="text-4xl text-white"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#" class="text-4xl text-white"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#" class="text-4xl text-white"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+
+    </footer>
 
     <!-- flowbite script cdn -->
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
